@@ -1,4 +1,5 @@
 name: Deploy static site to GitHub Pages
+# Fresh run after restoring the scroll-driven video hero.
 on:
   push:
     branches: ["main"]
