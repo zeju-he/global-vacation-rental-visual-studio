@@ -3,7 +3,7 @@
   const VIDEO_MOBILE = "https://d2ol7oe51mr4n9.cloudfront.net/user_3MT2M2itpgET4gDypCBXSwRu0ZT/c8822702-c766-4387-a4ad-a0a2fd73b1b3.mp4";
   const POSTER = "https://d2ol7oe51mr4n9.cloudfront.net/user_3MT2M2itpgET4gDypCBXSwRu0ZT/105c1429-362d-4ab5-bd52-1bf80ad03399.png";
   const css = `
-    .hero-scroll{position:relative;height:260vh;margin:0 calc((min(1160px,100% - 44px) - 100vw)/2);background:#172635}
+    .hero-scroll{position:relative;height:260vh;width:100vw;margin-left:calc(50% - 50vw);background:#172635}
     .hero-scroll__stage{height:100svh;min-height:560px;position:sticky;top:0;overflow:hidden;isolation:isolate}
     .hero-scroll__video,.hero-scroll__poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
     .hero-scroll__poster{z-index:-1}
