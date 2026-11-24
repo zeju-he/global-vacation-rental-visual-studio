@@ -3,6 +3,7 @@
   if (!story) return;
   const chapters = [...story.querySelectorAll('.film-chapter')];
   const progress = story.querySelector('.film-progress span');
+  const scenes = [...story.querySelectorAll('.scene-layer')];
   let raf = 0;
 
   function update() {
@@ -13,6 +14,9 @@
     const active = Math.min(chapters.length - 1, Math.floor(amount * chapters.length));
     chapters.forEach((chapter, index) => {
       chapter.classList.toggle('is-active', index === active);
+    });
+    scenes.forEach((scene, index) => {
+      scene.classList.toggle('is-active', index === active);
     });
     if (progress) progress.style.width = (amount * 100).toFixed(2) + '%';
   }
